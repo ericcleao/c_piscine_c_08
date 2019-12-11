@@ -6,7 +6,7 @@
 /*   By: ecerquei <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/11 02:48:18 by ecerquei          #+#    #+#             */
-/*   Updated: 2019/12/11 03:29:38 by ecerquei         ###   ########.fr       */
+/*   Updated: 2019/12/11 04:53:09 by ecerquei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,10 +59,11 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-void ft_putstr(char *str)
+void	ft_putstr(char *str)
 {
-	int i = 0;
+	int i;
 
+	i = 0;
 	while (str[i] != '\0')
 	{
 		write(1, &str[i], 1);
