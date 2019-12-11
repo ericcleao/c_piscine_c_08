@@ -6,7 +6,7 @@
 /*   By: ecerquei <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/09 20:19:45 by ecerquei          #+#    #+#             */
-/*   Updated: 2019/12/10 13:27:05 by ecerquei         ###   ########.fr       */
+/*   Updated: 2019/12/11 04:53:34 by ecerquei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ t_stock_str	*ft_strs_to_tab(int ac, char **av)
 
 	stock_str = (t_stock_str*)malloc((ac + 1) * sizeof(t_stock_str));
 	if (stock_str == NULL)
-		return NULL;
+		return (NULL);
 	i = 0;
 	while (i < ac)
 	{
