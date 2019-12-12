@@ -6,7 +6,7 @@
 /*   By: ecerquei <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/11 02:48:18 by ecerquei          #+#    #+#             */
-/*   Updated: 2019/12/11 15:25:00 by ecerquei         ###   ########.fr       */
+/*   Updated: 2019/12/12 14:05:02 by ecerquei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,9 +57,9 @@ void	ft_show_tab(struct s_stock_str *par)
 	i = 0;
 	while (par[i].str != 0)
 	{
-		ft_putnbr(par[i].size);
-		write(1, "\n", 1);
 		ft_putstr(par[i].str);
+		write(1, "\n", 1);
+		ft_putnbr(par[i].size);
 		write(1, "\n", 1);
 		ft_putstr(par[i].copy);
 		write(1, "\n", 1);
